@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Feedback Modal Component - FrontendPro Challenge</title>
+  </head>
+  <body>
+    <button class="open-modal" onclick="openfeedbackModal()">
+      Give Feedback
+    </button>
+    <div id="feedbackModal">
+      <div class="modal-content">
+        <h2>
+          How likely are you to recommend Coder's HUB
+          to someone you know!
+        </h2>
+        <div class="rating-scale">
+          <button onclick="selectRating(1)">1</button>
+          <button onclick="selectRating(2)">2</button>
+          <button onclick="selectRating(3)">3</button>
+          <button onclick="selectRating(4)">4</button>
+          <button onclick="selectRating(5)">5</button>
+          <button onclick="selectRating(6)">6</button>
+          <button onclick="selectRating(7)">7</button>
+          <button onclick="selectRating(8)">8</button>
+          <button onclick="selectRating(9)">9</button>
+          <button onclick="selectRating(10)">10</button>
+        </div>
+        <div class="ratingLevel">
+          <span>Least likely to recommend</span>
+          <span>Most Likely to recommend</span>
+        </div>
+        <div class="buttons">
+          <button id="cancelButton" onclick="closeFeedbackModal()">Cancel</button>
+          <button id="submitButton" onclick="submitFeedbackModal()">Submit</button>
+
+        </div>
+      </div>
+    </div>
+    <script src="/src/script.js"></script>
+  </body>
+</html>
